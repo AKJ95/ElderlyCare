@@ -159,7 +159,7 @@
   <script>
     async function fetchOptions()
     {
-      let response = await fetch('http://127.0.0.1:9595/getServices');
+      let response = await fetch('https://elderly-care.herokuapp.com/getServices');
       let body = eval(await response.text());
       let content = '<option value="">[Select]</option>';
       for(let i = 0; i < body.length; i++)
@@ -171,8 +171,7 @@
 
     document.getElementById('serviceOption').addEventListener('change', async function(event){
       event.preventDefault();
-      console.log('http://127.0.0.1:9595/getServiceDates?='+document.getElementById('serviceOption').value);
-      let response = await fetch('http://127.0.0.1:9595/getServiceDates?name='+document.getElementById('serviceOption').value);
+      let response = await fetch('https://elderly-care.herokuapp.com/getServiceDates?name='+document.getElementById('serviceOption').value);
       let body = eval(await response.text());
       let content = '';
       for(let i = 0; i < body.length; i++)

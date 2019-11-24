@@ -164,7 +164,7 @@
       let username_ = document.getElementById('logInUsername').value;
       let password_ = document.getElementById('logInPassword').value;
     
-      let response = await fetch('http://127.0.0.1:9595/login?username=' + username_ + '&password=' + password_);
+      let response = await fetch('https://elderly-care.herokuapp.com/login?username=' + username_ + '&password=' + password_);
       if(!response.ok){
         throw new Error("problem: " + response.code);
       }

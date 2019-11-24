@@ -169,7 +169,7 @@
   <script>
     async function fetchEvent()
     {
-      let response = await fetch('http://127.0.0.1:9595/getServices');
+      let response = await fetch('https://elderly-care.herokuapp.com/getServices');
       let body = eval(await response.text());
       let content = '';
       for(let i = 0; i < body.length; i++)
