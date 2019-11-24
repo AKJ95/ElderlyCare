@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS, Bootstrap JavaScript and Octicon CSS-->
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/build.css">
+    <script src="jquery/dist/jquery.slim.min.js"></script>
+    <script src="popper.js/dist/umd/popper.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- BookHub icon -->
+    <link rel="icon" href="tab_icon.jpg">
+    <title>Elderly Care</title>
+</head>
+<body>
+
+  <div style="position: relative; min-height: 100vh;">
+  <div style="padding-bottom: 10rem;">
+
+  <!-- Alert Section -->
+  <div id="alertSection">
+  </div>
+
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#hamburger">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+  		<a class="navbar-brand" href="index.html">
+  			<img src="icon.jpg" width="90" height="35" alt="Logo"> <b>Elderly Care</b>
+  		</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#searchBox">
+        <!-- The search icon comes courtesy of Octicon-->
+    		<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+  		</button>
+      <div class="collapse navbar-collapse" id="hamburger">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="aboutButton">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/services.html" id="reviewList">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/sign_up.html" id="DCCSignUp">Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/log_in.html" id="DCCLogIn">Log In</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="contribute" data-toggle="dropdown">Contribute</a>
+            <div class="dropdown-menu" id="contributeList">
+              <a class="dropdown-item" href="#" id="addBook">Add Book</a>
+              <a class="dropdown-item" href="#" id="addReview">Add Review</a>
+            </div>
+          </li>
+          <li>
+            <div id="username">
+            </div>
+            <div id="login">
+              <form class="form-inline my-2 my-lg-0" action="/auth/github" method="get">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log In</button>
+              </form>
+            </div>
+            <div id="logout"> 
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="collapse navbar-collapse" id="searchBox">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <select class="custom-select" style="border-top-right-radius: 0px; border-bottom-right-radius: 0px;  border-color: lightgrey;" id="typeNav">
+              <option value="book">Book</option>
+              <option value="review">Review</option>
+            </select>
+          </div>
+          <input class="form-control" type="text" placeholder="Your keywords..." aria-label="search" id="keywordNav">
+          <div class="input-group-append">
+            <div class="btn-group" role="group">
+              <div class="dropdown">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false" style="border-color: lightgrey; border-radius: 0px;">
+                  <span class="caret">Filters</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" style="padding: 10px;" role="menu">
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                      <label>Genre</label>
+                      <select class="form-control" id="filterGenreNav">
+                      </select>
+                    </div> 
+                  </form>
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                      <label>Author</label>
+                      <select class="form-control" id="filterAuthorNav">
+                      </select>
+                    </div> 
+                  </form>
+                </div>
+              </div>
+              <button class="btn btn-outline-success" id="searchNav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+	</nav>
+
+  <!-- Slogan image -->
+  <div>
+    <div id="slogan">
+      <div class="row justify-content-center">
+        <div class="col-6">
+          <img class="img-fluid" src="slogan.jpg" alt="Slogan">
+        </div>
+        <div class="col-6">
+          <img class="img-fluid" src="slogan.jpg" alt="Slogan">
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Main search section 
+  <div class="container">
+    <br>
+    <div class="row justify-content-center">
+      <h2 id="searchSectionTitle">Search for a Book</h2>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-10 input-group justify-content-center" id="searchMainControl">
+        <div class="input-group-prepend">
+          <div id="typeMainContainer">
+            <select class="custom-select" id="typeMain" style="border-color: lightgrey; border-top-right-radius: 0px; border-bottom-right-radius: 0px;"><option value="book">Book</option><option value="review">Review</option></select>
+          </div>
+        </div>
+        <input type="text" class="form-control" style="border-color: lightgrey; border-radius: 0px;" placeholder="keywords..." id="keywordMain">
+        <div class="input-group-append">
+          <div class="dropdown" id="filterContainer">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false" style="border-color: lightgrey; border-radius: 0px;"><span class="caret">Filters</span></button><div class="dropdown-menu dropdown-menu-right" style="padding: 10px;" role="menu"><form class="form-horizontal"><div class="form-group"><label>Genre</label><select class="form-control" id="filterGenreMain"></select></div></form><form class="form-horizontal"><div class="form-group"><label>Author</label><select class="form-control" id="filterAuthorMain"></select></div></form></div>
+          </div>
+          <div id="searchMain">
+            <button class="btn btn-outline-success" style="border-top-left-radius: 0px; border-bottom-left-radius: 0px;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-10">
+        <ul class="list-group" id="searchResult">
+        </ul>
+      </div>
+    </div>
+    <br>
+  </div>
+  -->
+
+  <!-- Details Section 
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-10">
+        <div id="itemDetail">
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-10" id="relatedDetailHeader">
+      </div>
+      <div class="col-12 col-sm-10">
+        <ul class="list-group" id="relatedDetailList">
+        </ul>
+      </div>
+    </div>
+    <br>
+  </div>
+  -->
+
+  <!-- Form Section 
+  <div class="container justify-content-center">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 justify-content-center" id="bookFormTitle">
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 justify-content-center" id="bookForm">
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 justify-content-center" id="reviewFormTitle">
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 justify-content-center" id="reviewForm">
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 justify-content-center" id="reviewDeleteFormTitle">  
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 justify-content-center" id="reviewDeleteForm">
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 justify-content-center" id="reviewEditFormTitle">  
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 justify-content-center" id="reviewEditForm">
+      </div>
+    </div>
+  </div>
+  -->
+  
+
+
+  <!-- Introduction section -->
+  <div class="container" id="introduction">
+    <br>
+    <div class="row">
+      <div class="col-12 col-md-3" style="text-align: center;">
+        <!-- The info icon comes courtesy of Octicon-->
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="40" viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"/></svg>
+        <span style="font-size: 24px"><b> Get Info</b></span>
+      </div>
+      <div class="col-12 col-md-9" style="text-align: center;">
+        <p>Find information about new books you might be interested in </p>
+      </div>
+    </div> 
+    <br>
+    <div class="row">
+      <div class="col-12 col-md-3" style="text-align: center;">
+        <!-- The book icon comes courtesy of Octicon-->
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" viewBox="0 0 12 16"><path fill-rule="evenodd" d="M9 2c-.97 0-1.69.42-2.2 1-.51.58-.78.92-.8 1-.02-.08-.28-.42-.8-1-.52-.58-1.17-1-2.2-1-1.632.086-2.954 1.333-3 3 0 .52.09 1.52.67 2.67C1.25 8.82 3.01 10.61 6 13c2.98-2.39 4.77-4.17 5.34-5.33C11.91 6.51 12 5.5 12 5c-.047-1.69-1.342-2.913-3-3z"/></svg>
+        <span style="font-size: 24px"><b> Find Service</b></span>
+      </div>
+      <div class="col-12 col-md-9" style="text-align: center;">
+        <p>Look up for the various types of services provided to elderlies in Durham. </p>
+      </div>
+    </div>
+    <br />
+    <div class="row">
+      <!-- The pencil icon comes courtesy of Octicon-->
+      <div class="col-12 col-md-3" style="text-align: center;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M15 1H6c-.55 0-1 .45-1 1v2H1c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h1v3l3-3h4c.55 0 1-.45 1-1V9h1l3 3V9h1c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1zM9 11H4.5L3 12.5V11H1V5h4v3c0 .55.45 1 1 1h3v2zm6-3h-2v1.5L11.5 8H6V2h9v6z"/></svg>
+        <span style="font-size: 24px"><b> Chat in Forum</b></span>
+      </div>
+      <div class="col-12 col-md-9" style="text-align: center;">
+        <p> Chat with other elderlies in the forum.</p>
+      </div>
+    </div>
+    <br />
+  </div>
+  <br><br>
+
+  <!-- About section 
+  <div class="container justify-content-center">
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-10 justify-content-center" id="about">
+      </div>
+    </div>
+    <br>
+  </div>
+  -->
+
+  <!-- Footer -->
+  <div class="jumbotron" style="position: absolute; bottom: 0; width: 100%; height: 10rem;">
+    <div class="container">
+      <img src="icon.jpg" width="90" height="35" alt=""> <b>Elderly Care</b>
+    </div>
+  </div>
+
+  <!-- Client-side JavaScript -->
+  <script src="index.js"></script>
+</body>
+</html>

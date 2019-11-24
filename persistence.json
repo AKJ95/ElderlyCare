@@ -1,0 +1,129 @@
+{
+  "books": [
+    {
+      "title": "Life to the Limit",
+      "genre": "Autobiography",
+      "givenName": "Jenson",
+      "lastName": "Button",
+      "intro": ""
+    },
+    {
+      "title": "One Hundred Years of Solitude",
+      "genre": "Magical Realism",
+      "givenName": "Gabriel",
+      "lastName": "Garcia Marquez",
+      "intro": "Nobel prize winner book."
+    },
+    {
+      "title": "The Three Musketeers",
+      "genre": "Historical Fiction",
+      "givenName": "Alexandre",
+      "lastName": "Dumas",
+      "intro": "One of the most celebrated and popular historical romances ever written, The Three Musketeers tells the story of the early adventures of the young Gascon gentleman, D'Artagnan and his three friends from the regiment of the King's Musketeers - Athos, Porthos and Aramis.\n\nUnder the watchful eye of their patron M. de Treville, the four defend the honour of the regiment against the guards of Cardinal Richelieu, and the honour of the queen against the machinations of the Cardinal himself as the power struggles of seventeenth century France are vividly played out in the background.\n\nBut their most dangerous encounter is with the Cardinal's spy, Milady, one of literature's most memorable female villains, and Alexandre Dumas employs all his fast-paced narrative skills to bring this enthralling novel to a breathtakingly gripping and dramatic conclusion.\n\nOur edition uses the William Barrow translation first published by Bruce and Wylde (London,1846)"
+    },
+    {
+      "title": "The Count of Monte Cristo",
+      "genre": "Adventure",
+      "givenName": "Alexandre",
+      "lastName": "Dumas",
+      "intro": "The story of Edmund Dantes, self-styled Count of Monte Cristo, is told with consummate skill. The victim of a miscarriage of justice, Dantes is fired by a desire for retribution and empowered by a stroke of providence. In his campaign of vengeance, he becomes an anonymous agent of fate.\n\nThe sensational narrative of intrigue, betrayal, escape, and triumphant revenge moves at a cracking pace. Dumas' novel presents a powerful conflict between good and evil embodied in an epic saga of rich diversity that is complicated by the hero's ultimate discomfort with the hubristic implication of his own actions."
+    },
+    {
+      "title": "ALEX FERGUSON My Autobiography",
+      "genre": "Autobiography",
+      "givenName": "Alex",
+      "lastName": "Ferguson",
+      "intro": "Sir Alex Ferguson's compelling story is always honest and revealing he reflects on his managerial career that embraced unprecedented European success for Aberdeen and 26 triumphant seasons with Manchester United.\n\nSir Alex Ferguson's best-selling autobiography has now been updated to offer reflections on events at Manchester United since his retirement as well as his teachings at the Harvard Business School, a night at the Oscars and a boat tour round the Hebrides, where he passed unrecognised.\n\nThe extra material adds fresh insights and detail on his final years as United's manager.\n\nBoth the psychology of management and the detail of football strategy at the top level can be complex matters but no-one has explained them in a more interesting and accessible way for the general reader than Sir Alex does here."
+    },
+    {
+      "title": "Les Misérables",
+      "genre": "Historical Fiction",
+      "givenName": "Victor",
+      "lastName": "Hugo",
+      "intro": "Victor Hugo’s tale of injustice, heroism and love follows the fortunes of Jean Valjean, an escaped convict determined to put his criminal past behind him. But his attempts to become a respected member of the community are constantly put under threat: by his own conscience, when, owing to a case of mistaken identity, another man is arrested in his place; and by the relentless investigations of the dogged policeman Javert. It is not simply for himself that Valjean must stay free, however, for he has sworn to protect the baby daughter of Fantine, driven to prostitution by poverty. A compelling and compassionate view of the victims of early nineteenth-century French society, Les Misérables is a novel on an epic scale, moving inexorably from the eve of the battle of Waterloo to the July Revolution of 1830."
+    },
+    {
+      "title": "The Hunchback of Notre-Dame",
+      "genre": "Romance",
+      "givenName": "Victor",
+      "lastName": "Hugo",
+      "intro": "More commonly known as The Hunchback of Notre-Dame, Victor Hugo's Romantic novel of dark passions and unrequited love, Notre-Dame de Paris, is translated with an introduction by John Sturrock in Penguin Classics.\n\nIn the vaulted Gothic towers of Notre-Dame Cathedral lives Quasimodo, the hunchbacked bellringer. Mocked and shunned for his appearance, he is pitied only by Esmerelda, a beautiful gypsy dancer to whom he becomes completely devoted. Esmerelda, however, has also attracted the attention of the sinister archdeacon Claude Frollo, and when she rejects his lecherous approaches, Frollo hatches a plot to destroy her, that only Quasimodo can prevent. Victor Hugo's sensational, evocative novel brings life to the medieval Paris he loved, and mourns its passing in one of the greatest historical romances of the nineteenth century."
+    }
+  ],
+  "reviews": [
+    {
+      "reviewer": "AKJ95",
+      "book": {
+        "title": "The Hunchback of Notre-Dame",
+        "genre": "Romance",
+        "givenName": "Victor",
+        "lastName": "Hugo",
+        "intro": "More commonly known as The Hunchback of Notre-Dame, Victor Hugo's Romantic novel of dark passions and unrequited love, Notre-Dame de Paris, is translated with an introduction by John Sturrock in Penguin Classics.\n\nIn the vaulted Gothic towers of Notre-Dame Cathedral lives Quasimodo, the hunchbacked bellringer. Mocked and shunned for his appearance, he is pitied only by Esmerelda, a beautiful gypsy dancer to whom he becomes completely devoted. Esmerelda, however, has also attracted the attention of the sinister archdeacon Claude Frollo, and when she rejects his lecherous approaches, Frollo hatches a plot to destroy her, that only Quasimodo can prevent. Victor Hugo's sensational, evocative novel brings life to the medieval Paris he loved, and mourns its passing in one of the greatest historical romances of the nineteenth century."
+      },
+      "reviewTitle": "Medieval Melodrama",
+      "reviewContent": "The young Hugo wrote Notre-Dame de Paris at a prodigious rate. He writes as an advocate of Gothic architecture, and does not hesitate in interlarding the plot with long interpolations. The Disney version of the book is a crude over-simplification. However, the novel is Gothic Romanticism of an extreme nature. Hugo and Walter Scott are often compared: Scott was much of an historical novelist. The introductory essay and notes are useful, and the modernity of the translation seldom jars. The Kindle version is not perfect. Finally, Hugo's masterpiece was still to come, but Notre-Dame de Paris is an extraordinary work by a young writer."
+    },
+    {
+      "reviewer": "AKJ95",
+      "book": {
+        "title": "The Hunchback of Notre-Dame",
+        "genre": "Romance",
+        "givenName": "Victor",
+        "lastName": "Hugo",
+        "intro": "More commonly known as The Hunchback of Notre-Dame, Victor Hugo's Romantic novel of dark passions and unrequited love, Notre-Dame de Paris, is translated with an introduction by John Sturrock in Penguin Classics.\n\nIn the vaulted Gothic towers of Notre-Dame Cathedral lives Quasimodo, the hunchbacked bellringer. Mocked and shunned for his appearance, he is pitied only by Esmerelda, a beautiful gypsy dancer to whom he becomes completely devoted. Esmerelda, however, has also attracted the attention of the sinister archdeacon Claude Frollo, and when she rejects his lecherous approaches, Frollo hatches a plot to destroy her, that only Quasimodo can prevent. Victor Hugo's sensational, evocative novel brings life to the medieval Paris he loved, and mourns its passing in one of the greatest historical romances of the nineteenth century."
+      },
+      "reviewTitle": "A powerful story centred around the Paris Cathedral",
+      "reviewContent": "One of the few versions which retains the original title of the book, not the misleading title (regarding a minor character) which Hugo detested. The protagonist in the work is the cathedral, not any of the characters, though the most important character would have to be the archdeacon of Josas, Dom Claude Frollo, a tragic young man condemned by his profession and by his love for the gypsy girl Esmeralda.\n\nAlthough his writing is not as powerful as in his later work, Les Miserables (Vintage Classics), Victor Hugo still weaves a gripping tale about architecture and progress, thinly hidden underneath the plot that the book is famous for. It is important to read this unabridged: otherwise the gems of Hugo's digressions will be either abridged or missed out entirely, and they are an essential part of his writing. The plot, the secondary purpose of the story, is rather melodramatic and relies on coincidences, but is still well told.\n\nThe unabridged translation by John Sturrock is well executed and readable, especially with regard to the Greek and Latin which appears in the book, translating this in footnotes. Overall a good translation of an early work by one of the great writers, Victor Hugo."
+    },
+    {
+      "reviewer": "AKJ95",
+      "book": {
+        "title": "Life to the Limit",
+        "genre": "Autobiography",
+        "givenName": "Jenson",
+        "lastName": "Button",
+        "intro": ""
+      },
+      "reviewTitle": "It's a great book and a must read for fans",
+      "reviewContent": "I'm a lifelong fan of JB so I was always going to buy this as soon as it was published. It's a great book and a must read for fans - very easy going, I took it on vacation and finished it in a weekend. Whilst it did include a lot of detail, for real fans of JB and F1 in general, I did feel that there was a lot of detail missing. JB has had an amazing career, both on track and off with his more recent engagements in the media and his Triathlon endevours but this is not discussed in much detail. Likewise, his relationships are sketched over with barely any revealing insights - whilst I can understand this to some extent, I would have liked to have learned more. I imagine this book could have been 3 times thicker and still required a sequel! It is however a good account of his time in the sport...The relationship with his father, John provides a central theme and you sense the writing of the book must have been a cathartic experience for Jenson. Hopefully we will see JB don the overalls again at Le Man or in another series and I'm sure at some point, there will be further stories to share."
+    },
+    {
+      "reviewer": "AKJ95",
+      "book": {
+        "title": "The Count of Monte Cristo",
+        "genre": "Adventure",
+        "givenName": "Alexandre",
+        "lastName": "Dumas",
+        "intro": "The story of Edmund Dantes, self-styled Count of Monte Cristo, is told with consummate skill. The victim of a miscarriage of justice, Dantes is fired by a desire for retribution and empowered by a stroke of providence. In his campaign of vengeance, he becomes an anonymous agent of fate.\n\nThe sensational narrative of intrigue, betrayal, escape, and triumphant revenge moves at a cracking pace. Dumas' novel presents a powerful conflict between good and evil embodied in an epic saga of rich diversity that is complicated by the hero's ultimate discomfort with the hubristic implication of his own actions."
+      },
+      "reviewTitle": "Always A Great Read",
+      "reviewContent": "Always popular with readers, Alexandre Dumas’ The Count of Monte Cristo is truly a great read, and one that is hard to put down. Here we follow the trials and tribulations of Edmond Dantès, a man caught up in events that are over his head. Carrying out the dying wishes of the captain of his ship, so unwittingly he finds that he has fallen into the hands of his enemies, although he doesn’t know them as such.\n\nAs others wish to see his downfall due to envy, greed and in one case to try and win the hand of his betrothed, so there is one more to appear, who needs to keep hidden what his father has done, not really to save his dad, but to help himself climb the slippery career path that he has set out for himself. Thus on his planned wedding day, so Edmond finds himself being incarcerated for supposed political crimes.\n\nAs Edmond is locked up so we follow events over the years, with the return of Napoleon and his second fall. For our hero though, nothing is to alter for him until he meets the Abbé Faria who sets about transforming his life. With many a nom de guerre so Edmond appears as different people in this fantastic tale, but ultimately he will be known as the Count of Monte Cristo, a man with large wealth to support himself."
+    },
+    {
+      "reviewer": "AKJ95",
+      "book": {
+        "title": "ALEX FERGUSON My Autobiography",
+        "genre": "Autobiography",
+        "givenName": "Alex",
+        "lastName": "Ferguson",
+        "intro": "Sir Alex Ferguson's compelling story is always honest and revealing he reflects on his managerial career that embraced unprecedented European success for Aberdeen and 26 triumphant seasons with Manchester United.\n\nSir Alex Ferguson's best-selling autobiography has now been updated to offer reflections on events at Manchester United since his retirement as well as his teachings at the Harvard Business School, a night at the Oscars and a boat tour round the Hebrides, where he passed unrecognised.\n\nThe extra material adds fresh insights and detail on his final years as United's manager.\n\nBoth the psychology of management and the detail of football strategy at the top level can be complex matters but no-one has explained them in a more interesting and accessible way for the general reader than Sir Alex does here."
+      },
+      "reviewTitle": "Haven't read",
+      "reviewContent": "Haven't Read."
+    }
+  ],
+  "services": [
+    {
+      "name": "Community Chess Competition",
+      "location": "CLC013",
+      "description": "Lorem Ipsum adslkfj asdkfja;lk asdlkjfa;. as;dlkjfa;, a;sdlkjfa;sdkljf;a, adsklfja;sldfkasdf.",
+      "dates": ["1/12/2019", "8/12/2019"]
+    },
+    {
+      "name": "Elderly Day Care",
+      "location": "",
+      "description": "asdlkfja; a;ldskjfa;l, a;dslkjfa;l. a;sdlkfja;lsdf, a;sdlkfja;lsdf.",
+      "dates": ["2/12/2019", "3/12/2019", "4/12/2019", "5/12/2019", "6/12/2019"]
+    }
+  ]
+}

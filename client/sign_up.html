@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS, Bootstrap JavaScript and Octicon CSS-->
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/build.css">
+    <script src="jquery/dist/jquery.slim.min.js"></script>
+    <script src="popper.js/dist/umd/popper.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- BookHub icon -->
+    <link rel="icon" href="tab_icon.jpg">
+    <title>Elderly Care</title>
+</head>
+<body>
+
+  <div style="position: relative; min-height: 100vh;">
+  <div style="padding-bottom: 10rem;">
+
+  <!-- Alert Section -->
+  <div id="alertSection">
+  </div>
+
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#hamburger">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+  		<a class="navbar-brand" href="index.html">
+  			<img src="icon.jpg" width="90" height="35" alt="Logo"> <b>Elderly Care</b>
+  		</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#searchBox">
+        <!-- The search icon comes courtesy of Octicon-->
+    		<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+  		</button>
+      <div class="collapse navbar-collapse" id="hamburger">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="aboutButton">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/services.html" id="reviewList">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/sign_up.html" id="DCCSignUp">Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/log_in.html" id="DCCLogIn">Log In</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="contribute" data-toggle="dropdown">Contribute</a>
+            <div class="dropdown-menu" id="contributeList">
+              <a class="dropdown-item" href="#" id="addBook">Add Book</a>
+              <a class="dropdown-item" href="#" id="addReview">Add Review</a>
+            </div>
+          </li>
+          <li>
+            <div id="username">
+            </div>
+            <div id="login">
+              <form class="form-inline my-2 my-lg-0" action="/auth/github" method="get">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log In</button>
+              </form>
+            </div>
+            <div id="logout"> 
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="collapse navbar-collapse" id="searchBox">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <select class="custom-select" style="border-top-right-radius: 0px; border-bottom-right-radius: 0px;  border-color: lightgrey;" id="typeNav">
+              <option value="book">Book</option>
+              <option value="review">Review</option>
+            </select>
+          </div>
+          <input class="form-control" type="text" placeholder="Your keywords..." aria-label="search" id="keywordNav">
+          <div class="input-group-append">
+            <div class="btn-group" role="group">
+              <div class="dropdown">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false" style="border-color: lightgrey; border-radius: 0px;">
+                  <span class="caret">Filters</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" style="padding: 10px;" role="menu">
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                      <label>Genre</label>
+                      <select class="form-control" id="filterGenreNav">
+                      </select>
+                    </div> 
+                  </form>
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                      <label>Author</label>
+                      <select class="form-control" id="filterAuthorNav">
+                      </select>
+                    </div> 
+                  </form>
+                </div>
+              </div>
+              <button class="btn btn-outline-success" id="searchNav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+	</nav>
+
+  <!-- Form Section -->
+  <div class="container justify-content-center">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 justify-content-center" id="signUpFormTitle">
+        <h2>Sign Up</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 justify-content-center" id = "signUpForm">
+        <form class="needs-validation" action="/signup" method="post">
+          <div class="form-row">
+            <div class="col-12 col-md-6 mb-3">
+              <label for="firstName">First Name *</label>
+              <input type="text" class="form-control" id="signUpFirstName" placeholder="First Name" required>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+              <label for="lastName">Last Name *</label>
+              <input type="text" class="form-control" id="signUpLastName" placeholder="Last Name" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-12 mb-3">
+              <label for="username">Username *</label>
+              <input type="text" class="form-control" id="signUpUsername" placeholder="Username" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-12 mb-3">
+              <label for="password">Password *</label>
+              <input type="password" class="form-control" id="signUpPassword" placeholder="Password" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-12 mb-3">
+              <label for="birthday">Birthday *</label>
+              <input type="text" class="form-control" id="signUpBirthday" placeholder="Birthday: DD/MM/YYYY" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-12 mb-3">
+              <label for="address">Address *</label>
+              <input type="text" class="form-control" id="signUpAddress" placeholder="Address" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-12 mb-3">
+              <label for="postCode">Post Code *</label>
+              <input type="text" class="form-control" id="signUpPostCode" placeholder="Post Code" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-12 mb-3">
+              <label for="contactNumber">Contact Number *</label>
+              <input type="text" class="form-control" id="signUpContactNumber" placeholder="Contact Number" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-12 mb-3">
+              <label for="Medical History">Medical History</label>
+              <textarea class="form-control" id="signUpMedicalHistory" placeholder="Any medical history you want to notify us."></textarea>
+            </div>
+          </div>
+          <button   class="btn btn-success" type="submitSignUp">Submit</button></form><br>
+
+      </div>
+    </div>
+  </div>  
+  <br><br>
+
+  <!-- Introduction section -->
+
+  <!-- About section -->
+
+  <!-- Footer -->
+  <div class="jumbotron" style="position: absolute; bottom: 0; width: 100%; height: 10rem;">
+    <div class="container">
+      <img src="icon.jpg" width="90" height="35" alt=""> <b>Elderly Care</b>
+    </div>
+  </div>
+
+  <!-- Client-side JavaScript -->
+  <script src="index.js"></script>
+</body>
+</html>
