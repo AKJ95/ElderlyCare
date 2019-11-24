@@ -2,4 +2,4 @@
 
 /*global require:true*/
 const app = require('./app');
-app.listen(9595);
+app.listen(process.env.PORT || 9595);
